@@ -53,7 +53,7 @@ describe("MyToken", function () {
         await expect(
             token.transfer(
                 addr1.address,
-                ethers.utils.parseEther("2000") // 👈 FIXED
+                ethers.utils.parseEther("2000")
             )
         ).to.be.reverted;
     });
